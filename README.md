@@ -38,16 +38,16 @@ wait(mutex);
 Critical Section  
 ...  
 signal(mutex);  
-
-
-
+  
+  
+  
 세마포어(semaphore)
-
+  
 데드락을 피하기 위한 기술 중에 하나이다.  
 Thread가 Critical Section에 접근할때 해당 Thread는 세마포어의 카운트를 감소시키고 수행이 종료된 후엔 세마포어의 카운트를 원래대로 증가시킨다.   
 즉 일종의 신호등의 역할을 한다. (카운트와 flag의 역할?)  
-
-
+  
+  
 세마포어는 Signaling 메커니즘이라는 점에서 뮤텍스와 다르다. 세마포어는 락을 걸지 않은 쓰레드도 Signal을 보내 락을 해제할 수 있다는 점에서, wait 함수를 호출한 쓰레드만이 signal 함수를 호출할 수 있는 뮤텍스와 다르다.  
   
 세마포어는 동기화를 위해 wait와 signal이라는 2개의 atomic operations를 사용한다.  
