@@ -11,6 +11,7 @@ state transition diagram
 
 UML 표기법
 
+![XDD6232imagelistfilename1](https://user-images.githubusercontent.com/89113823/132148379-8aab49f5-3ea2-43b4-a357-81b6bf2c0cbd.jpg)
 
 
 state(상태) - 어떤 조건을 만족시키거나, 동작을 수행하거나, 사건을 기다리는 객체의 수명 동안의 조건
